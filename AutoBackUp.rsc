@@ -4,9 +4,9 @@
 #@author Jan Sobczak (jasobeczek@gmail.com)
 #
 
-:local backupName "MikroTik" # Filter - prefix of backup name
-:local daysAgo 8 # How long back should be stored
-:local folderName "" # folderName - [optional] if set backup will be stored in other folder
+:local backupName "MikroTik"; # Filter - prefix of backup name
+:local daysAgo 8; # How long back should be stored
+:local folderName ""; # folderName - [optional] if set backup will be stored in other folder
 ## SCRIPT
 :local months ("jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec");
 :local varDate [/system clock get date];
