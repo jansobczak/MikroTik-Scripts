@@ -18,7 +18,7 @@
 :set varMonth ([:find $months $varMonth -1 ] + 1);
 if ($varMonth < 10) do={ :set varMonth ("0" . "$varMonth"); };
 :local varDay [:pick $varDate 4 6];
-if ($varDay < 10) do={ :set varDay ("0" . "$varDay"); };
+##if ($varDay < 10) do={ :set varDay ("0" . "$varDay"); };
 :local varYear [:pick $varDate 7 11];
 :local varTime [/system clock get time];
 :set $varTime ([:pick $varTime 0 2] . [:pick $varTime 3 5]);
@@ -26,4 +26,3 @@ if ($varDay < 10) do={ :set varDay ("0" . "$varDay"); };
 /system backup save name="flash/$backupName-$curDate";
 /tool fetch address="$ftpAddress" src-path=("flash/" . "$backupName-$curDate" . ".backup") user="$ftpUser" mode=ftp password="$ftpPwd" dst-path=("$ftpFolder" . "$backupName-$curDate" . ".backup") upload=yes;
 /file remove [/file find where name="flash/$backupName-$curDate.backup"];
-:log info message="Auto backup end";
