@@ -1,12 +1,13 @@
 #PPPOE monitor
-#This script monitor pppoe client
-#If connection failed this script
-#try to reconnect
+#This script monitor PPPoE client
+#If connection failed this script try to
+#reconnect
 #
 #@author Jan Sobczak (jasobeczek@gmail.com)
 #
+## Config
 :local searchVar "status: "; #What variable is desired to find
-:local tempFileName "pppoe-monitor-file.txt"; #Temp file name
+:local tempFileName "pppoe-monitor-file.txt"; #Temp file name for logs
 
 #SCRIPT
 :foreach i in=[/interface pppoe-client find disabled=no] do={	

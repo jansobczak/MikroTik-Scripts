@@ -4,6 +4,7 @@
 #
 #@author Jan Sobczak (jasobeczek@gmail.com)
 #
+## Config
 :local backupName "MikroTik"; #prefix of backupname
 :local ftpAddress "****";
 :local ftpUser "****";

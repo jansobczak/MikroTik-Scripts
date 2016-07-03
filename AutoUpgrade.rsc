@@ -4,7 +4,7 @@
 #
 #@author Jan Sobczak (jasobeczek@gmail.com)
 #
-
+## SCRIPT
 /system package update
 check-for-updates once
 :delay 2s;
