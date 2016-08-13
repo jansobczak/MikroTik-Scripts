@@ -22,5 +22,7 @@
     	:put ([/interface pppoe-client get $i name] . ": ping test failed!");
 		:log warning ([/interface pppoe-client get $i name] . ": ping test failed!")
 		/interface pppoe-client enable $i; #Try to enable?
+	} else={
+		:put ([/interface pppoe-client get $i name] . ": OK");
 	}
 }
