@@ -12,3 +12,4 @@ Quick description of scripts:
 - PPPOE ping monitor - this script monitor all PPPoe interfaces by ping specified IP and try to reconnect if needed.
 - PPPOE restart - this script restart all enabled PPPoE interfaces.
 - WiFi monitor - this script disconnect clients with too weak signal after desired test time.
+- SFP_GPON - this script is for LXT-010S-H to force it to 2.5G base-T after restart from 1G - as auto-negotiation doesn't work
